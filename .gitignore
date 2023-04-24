@@ -1,0 +1,14 @@
+/denodo.pem
+/client_secret.txt
+/denodo-oauth/denodo-oauth/.gradle/
+/denodo-oauth/denodo-oauth/build/
+/denodo-oauth/denodo-oauth/gradle/
+/denodo-oauth/denodo-oauth/out/
+/request-dump/venv/
+/ms-identity-python-webapp-master/flask_session/
+/ms-identity-python-webapp-master/venv/
+/request-dump/.idea/
+**/__pycache__
+**/.idea
+**/venv
+.idea

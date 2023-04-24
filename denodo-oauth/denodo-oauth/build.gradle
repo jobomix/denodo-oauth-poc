@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+}
+
+group 'uk.gov.hmrc.oauth'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+//jar {
+//  manifest {
+//   attributes 'Main-Class': 'uk.gov.hmrc.oauth.Main'
+//  }
+//}
+
+java {
+  toolchain {
+    languageVersion.set(JavaLanguageVersion.of(8))
+  }
+}
+
+dependencies {
+    implementation group: 'com.nimbusds', name: 'nimbus-jose-jwt', version: '9.31'
+    implementation group: 'com.opencsv', name: 'opencsv', version: '4.1'
+    implementation fileTree(dir: 'lib', include: '*.jar')
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}

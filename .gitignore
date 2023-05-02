@@ -12,3 +12,4 @@
 **/.idea
 **/venv
 .idea
+/denodo-admin.txt
